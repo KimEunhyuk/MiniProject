@@ -21,8 +21,8 @@
 <br>
 
 # JavaScript Code 
-
-#### login.js `code`
+`code`
+#### login.js
 
 ``` js
 const [loginBtn, orderBtn] = document.querySelectorAll('.btn');
@@ -68,7 +68,7 @@ function ordercheck() {
 
 <br>
 
-#### orderScript.js `code`
+#### orderScript.js
 
 ``` js
 
@@ -128,7 +128,7 @@ function plusTable1(){
 
 ```
 
-#### search.js `code`
+#### search.js
 
 ``` js
 const btns = document.querySelector('#search-btn');
