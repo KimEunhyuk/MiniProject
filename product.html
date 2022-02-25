@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play dog</title>
+    <link rel="shortcut icon"
+        href="https://img.icons8.com/external-bearicons-outline-color-bearicons/344/external-Dog-chinese-new-year-bearicons-outline-color-bearicons.png">
+    <link rel="stylesheet" href="product.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script defer src="product.js"></script>
+    <script defer src = "orderList.js"></script>
+</head>
+
+<body class="container">
+    <!--navigator-->
+    <div class="navicontainer">
+        <a href="index.html">
+            <h2 class="store-title">PLAY DOG</h2>
+        </a>
+        <a href="" class="navi" style="margin:10px;">검색</a>
+        <a href="login.html" class="navi" style="margin:10px;">LOG IN/SIGN IN</a>
+        <a href="order.html" class="navi" style="margin:10px;">ORDER</a>
+        <a href="product.html" class="navi" style="margin:10px;">PRODUCT</a>
+        <a href="index.html" class="navi" style="margin:10px;">HOME</a>
+    </div>
+
+
+    <!--상위 메인화면-->
+    <div class="top-content">
+
+        <div class="inner-cont">
+            <div class="left">
+                <h2>
+                    <strong>NEW</strong>
+                    FOOD
+                </h2>
+                <ul class="main-desc">
+                    <li></li>
+                </ul>
+
+                <div class="tab-cont">
+                    <div class="main-banner">
+                        <img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+                            style="width: 490px; height: 320px;" alt="">
+                    </div>
+
+                    <div class="small-banner">
+                        <ul style="padding-left: 0;">
+                            <li>
+                                <div class="thumb-nail">
+                                    <img src="https://cdn.pixabay.com/photo/2011/11/16/11/30/plush-dog-10334_960_720.jpg" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumb-nail">
+                                    <img src="https://cdn.pixabay.com/photo/2011/11/16/11/30/plush-dog-10334_960_720.jpg" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="thumb-nail">
+                                    <img src="https://cdn.pixabay.com/photo/2011/11/16/11/30/plush-dog-10334_960_720.jpg" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right">
+                <div class="right-image" style="width:540px; height:540px;">
+                    <img src="https://cdn.pixabay.com/photo/2020/10/21/00/35/dog-5671777_960_720.jpg"
+                        style="width:540px; height:540px;">
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+    <br>
+    <!-- 슬라이드쇼 구현할 이미지들.-->
+    <div class="section">
+        <!-- 슬라이드쇼 컨테이너 -->
+        <div class="slideshow-container">
+            <h1>Best Product</h1>
+            <!-- 숫자와 캡션이 있는 이미지 -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="https://harimpetfood.com/web/product/big/202110/44a73f51e014a21b1ce01376bbe93704.jpg"
+                    style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="http://img3.tmon.kr/cdn3/deals/2020/04/08/3369822114/3369822114_summary_tubGxB5bql.jpg"
+                    style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="http://m.dingdonge.com/web/product/big/202112/8229a8ec28921d3e1a9cbf8562fddc4d.jpg"
+                    style="width:100%">
+                <div class="text"></div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext"> 4 / 4</div>
+                <img src="http://image.bom.co.kr/product/detail/ABV/2011300554311387/_600.jpg" style="width:100%">
+                <div class="text"></div>
+            </div>
+
+            <!-- 다음, 이전 이미지 버튼 -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- 현재 이미지를 알려주는 하단의 점 -->
+        <div style="text-align:center">
+
+        </div>
+
+
+        <!--tab menu-->
+        <div class="tabmenu-container">
+            <div class="tab-container">
+                <ul class="tabs">
+                    <li class="tab-link current" data-tab="tab-1">사료</li>
+                    <li class="tab-link" data-tab="tab-2">간식</li>
+                    <li class="tab-link" data-tab="tab-3">장난감</li>
+                </ul>
+            </div>
+
+            <!--tab 1 사료-->
+            <div id="tab-1" class="tab-content current">
+                <div class="tab-box">
+                    <div class="card-photo">
+                        <img id = "imgInfo-1"
+                            src="https://harimpetfood.com/web/product/big/202110/44a73f51e014a21b1ce01376bbe93704.jpg" />
+                    </div>
+                    <div class="info">
+                        <p class="store" id="store">하림펫푸드</p>
+                        <p class="product" id="product-1">TheRealGrain</p>
+                        <p id = "price-1">22,000Won</p>
+                        <button class="order-button" onclick="plusTable1()">BUY NOW</button>
+
+                    </div>
+
+                </div>
+
+                <div class="tab-box">
+
+                    <div class="card-photo">
+                        <img id="imgInfo-2"
+                            src="http://img3.tmon.kr/cdn3/deals/2020/04/08/3369822114/3369822114_summary_tubGxB5bql.jpg"
+                            alt="">
+                    </div>
+                    <div class="info">
+                        <p class="store" id="store">티몬</p>
+                        <p class="product" id="product-2">PetDaoom</p>
+                        <p class="price" id="price-2">17,900Won</p>
+                        <button class="order-button" onclick="plusTable2()">BUY NOW</button>
+                    </div>
+
+                </div>
+                <div class="tab-box">
+                    <div class="card-photo">
+                        <img id="imgInfo-3"
+                            src="http://m.dingdonge.com/web/product/big/202112/8229a8ec28921d3e1a9cbf8562fddc4d.jpg"
+                            alt="">
+                    </div>
+                    <div class="info">
+                        <p class="store">딩동개</p>
+                        <p class="product-3" id="product-3">RoyalCanin</p>
+                        <p class="price" id="price-3">39,900Won</p>
+                        <button class="order-button" onclick="plusTable3()">BUY NOW</button>
+                    </div>
+
+                </div>
+                <div class="tab-box">
+                    <div class="card-photo">
+                        <img id="imgInfo-4" src="http://image.bom.co.kr/product/detail/ABV/2011300554311387/_600.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="store">봄개</p>
+                        <p class="product" id="product-4">NaturalCore</p>
+                        <p class="price" id="price-4">27,900Won</p>
+                        <button class="order-button" onclick="plusTable4()">BUY NOW</button>
+                    </div>
+                </div>
+            </div>
+
+            <!--tab 2 간식-->
+            <div id="tab-2" class="tab-content">
+                <div class="tab-box">
+                    <div class="card-photo">
+                        <img src="https://cdn.pixabay.com/photo/2016/03/26/13/44/animal-1280588_960_720.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="store">가게명</p>
+                        <p class="product">
+                            <a href="">비스킷</a>
+                        </p>
+                        <p>2,000원</p>
+                        <button class="order-button"><a href="order.html">BUY NOW</a></button>
+                    </div>
+                </div>
+
+
+                
+                <div class="tab-box">
+                    <div class="card-photo">
+                        <img src="https://cdn.pixabay.com/photo/2014/05/21/18/08/dog-bones-350092_960_720.jpg" alt="">
+                    </div>
+
+                    <div class="info">
+                        <p class="store">가게명</p>
+                        <p class="product">
+                            <a href="">비스킷</a>
+                        </p>
+                        <p>11111원</p>
+                        <button class="order-button"><a href="order.html">BUY NOW</a></button>
+                    </div>
+                </div>
+
+                <div class="tab-box">
+                    <div class="card-photo">
+                        <img src="https://cdn.pixabay.com/photo/2014/05/21/18/08/dog-bones-350093_960_720.jpg" alt="">
+                    </div>
+                    <div class="info">
+                        <p class="store">뼈다귀</p>
+                        <p class="product">
+                            <a href="">뼈다귀</a>
+                        </p>
+                        <p>8,000원</p>
+                        <button class="order-button"><a href="order.html">BUY NOW</a></button>
+                    </div>
+                </div>
+
+            </div>
+
+            
+            <!--tab 3 장난감-->
+            <div id="tab-3" class="tab-content">
+                <div class="tab-box">
+                    <div class="card-photo">
+                        <img src="https://cdn.pixabay.com/photo/2011/11/16/11/30/plush-dog-10334_960_720.jpg" alt="">
+                    </div>
+
+                    <div class="info">
+                        <p class="store">바잇미</p>
+                        <p class="product">
+                            <a href="">강아지인형</a>
+                        </p>
+                        <p>5,000원</p>
+                        <button class="order-button"><a href="order.html">BUY NOW</a></button>
+                    </div>
+                </div>
+
+                <div class="tab-box">
+                    <div class="card-photo">
+                        <img src="https://cdn.pixabay.com/photo/2011/11/16/11/31/plush-dog-10335_960_720.jpg" alt="">
+                    </div>
+
+                    <div class="info">
+                        <p class="store">독샵</p>
+                        <p class="product">
+                            <a href="">강아지인형</a>
+                        </p>
+                        <p>5000원</p>
+                        <button class="order-button"><a href="order.html">BUY NOW</a></button>
+                    </div>
+                </div>
+
+                <div class="tab-box">
+                    <div class="card-photo">
+                        <img src="https://cdn.pixabay.com/photo/2011/11/16/11/30/plush-dog-10334_960_720.jpg" alt="">
+                    </div>
+
+                    <div class="info">
+                        <p class="store">독샵</p>
+                        <p class="product">
+                            <a href="">앵무새인형</a>
+                        </p>
+                        <p>11111원</p>
+                        <button class="order-button"><a href="order.html">BUY NOW</a></button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <footer class="footer">
+        <p>사업자 정보</p>
+        <i class="">dd</i>
+        <i class="">dd</i>
+        <p class="">연락처 : 02-1111-111<br>주소 : 서울시 어딘가</p>
+        <a class="" href="" target="_blank">link</a>
+    </footer>
+
+</body>
+
+</html>

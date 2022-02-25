@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    display: block;
+    font-family:Verdana,sans-serif;
+    font-size:15px;
+    line-height:1.5;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.navicontainer {
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    display: table;
+    white-space: normal;
+    overflow:hidden;
+}
+
+
+.store-title {
+    float: left;
+    font-size: 30px;
+    margin: 10px 0;
+    padding: 0 8px;
+    width: 200px;
+    background-color: #795548!important;
+    color: #FFFF;
+    border-radius: 4px;
+    display: block;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.navi {
+    padding: 8px 16px;
+    float: right;
+    width: auto;
+    border: none;
+    font-size: 15px;
+    white-space: nowrap;
+    text-align: center;
+    outline: 0;
+    display: inline-block;
+    overflow: hidden;
+}
+
+
+.navi:hover, .buy-button:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+
+a {
+    color: inherit;
+    background-color: transparent;
+    text-decoration-line: none;
+}
+
+
+/*회원가입 부분*/
+.register-container{
+    border: 0px solid;
+}
+
+.login-container{
+    width: 380px; 
+    height: 520px; 
+    margin: auto; 
+    border-radius: 3px; 
+    border: 2px solid black;
+}
+
+.form_container{
+    width: 300px;
+    margin: auto;
+}
+
+.form_title_div{
+    margin: auto; 
+    text-align: center;
+}
+
+.form_title_p{
+    font-weight: bold; 
+    font-size: 22px; 
+    display: inline-block; 
+    padding-top: 8px;
+}
+
+.form_input{
+    width: 98%; 
+    height: 30px; 
+    border: 1px solid; 
+    border-radius: 3px; 
+    border-color: gray;
+}
+
+.form_item_name{
+    color: gray;
+}
+
+.form_text_alert{
+    height: 20px;
+}
+
+.form_text_alert_padding{
+    padding-bottom: 10px;
+}
+
+.form_submit_button{
+    width: 100%; 
+    height: 44px; 
+    background-color: #ffffcc; 
+    border: 1px; 
+    border-radius: 3px; 
+    color: #333; 
+    font-size: 17px; 
+    font-weight: 500;
+}

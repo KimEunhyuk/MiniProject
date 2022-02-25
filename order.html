@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/external-bearicons-outline-color-bearicons/344/external-Dog-chinese-new-year-bearicons-outline-color-bearicons.png">
+    <link rel="stylesheet" href="order.css">
+    <script defer src = "orderScript.js" ></script>
+
+    <script language="javascript">
+        temp = location.href.split("?");
+        data = temp[1].split("!"); 
+        img = data[0].split("@");       //img
+        temp1 = data[1].split("@");       
+        product = temp1[0].split("%");     //product
+        price = temp1[1];                  //price
+        console.log(price);
+    </script>
+</head>
+
+<body id = "body" class="container">
+    <div class="navicontainer">
+        <a href="index.html">
+            <h2 class="store-title">PLAY DOG</h2>
+        </a>
+        <a href="" class="navi" style="margin:10px;">검색</a>
+        <a href="login.html" class="navi" style="margin:10px;">LOG IN/SIGN IN</a>
+        <a href="order.html" class="navi" style="margin:10px;">ORDER</a>
+        <a href="product.html" class="navi" style="margin:10px;">PRODUCT</a>
+        <a href="index.html" class="navi" style="margin:10px;">HOME</a>
+    </div>
+
+    <img id="imgInfo" src="order.html" alt="">
+
+    <div id="orderList" class="orderList">
+       
+    </div>
+
+    <footer>
+        <div class="costFooter">
+            <p>총 결제 금액 : </p>
+            <p id = "value" class="resultCost">1</p>
+            <button class ="buttonReact" onclick="location.href ='orderResult.html'">주문하기 </button>
+        </div>
+    </footer>
+
+</body>
+</html>

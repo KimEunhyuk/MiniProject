@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play dog</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/external-bearicons-outline-color-bearicons/344/external-Dog-chinese-new-year-bearicons-outline-color-bearicons.png">
+    <link rel="stylesheet" href="register.css">
+    <script defer src="register.js"></script>
+</head>
+
+<body class="container">
+    <!--navigator-->
+    <div class="navicontainer">
+        <a href="index.html">
+            <h2 class="store-title">PLAY DOG</h2>
+        </a>
+        <a href="search.html" class="navi" style="margin:10px;">검색</a>
+        <a href="login.html" class="navi" style="margin:10px;">LOG IN/SIGN IN</a>
+        <a href="order.html" class="navi" style="margin:10px;">ORDER</a>
+        <a href="product.html" class="navi" style="margin:10px;">PRODUCT</a>
+        <a href="index.html" class="navi" style="margin:10px;">HOME</a>
+    </div>
+
+    <!--회원가입 작성란-->
+    <div class="register-container">
+        <div style="padding: 20px;"></div>
+        <div class="login-container">
+            <div class="form_container">
+                <form name="login_form" action="/cookie" method="get">
+                    <div class="form_title_div">
+                        <p class="form_title_p">회원가입</p>
+                    </div>
+                    <div>
+                        <div>
+                            <a class="form_item_name">이름</a>
+                        </div>
+                        <div>
+                            <input type="text" name="username" placeholder="이름을 입력해주세요" class="form_input"/>
+                        </div>
+                        <div class="form_text_alert_padding">
+                            <div id="alert_username" class="form_text_alert"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <a class="form_item_name">Email</a>
+                        </div>
+                        <div>
+                            <input type="text" name="email" placeholder="E-mail" class="form_input"/>
+                        </div>
+                        <div class="form_text_alert_padding">
+                            <div id="alert_email" class="form_text_alert"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <a class="form_item_name">비밀번호</a>
+                        </div>
+                        <div>
+                            <input type="password" name="password" placeholder="6자리 이상의 비밀번호를 입력해주세요" class="form_input" />
+                        </div>
+                        <div class="form_text_alert_padding">
+                            <div id="alert_password" class="form_text_alert"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <a class="form_item_name">비밀번호 재확인</a>
+                        </div>
+                        <div>
+                            <input type="password" name="password2" onfocus="" placeholder="비밀번호를 다시 입력해주세요" class="form_input" />
+                        </div>
+                        <div class="form_text_alert_padding">
+                            <div id="alert_password2" class="form_text_alert"></div>
+                        </div>
+                    </div>
+                    <div style="height: 10px;"></div>
+                    <div>
+                        <button type="button" class="form_submit_button" onclick="signup()">가입하기</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    
+
+
+
+
+</body>
+
+</html>

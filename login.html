@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play dog</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/external-bearicons-outline-color-bearicons/344/external-Dog-chinese-new-year-bearicons-outline-color-bearicons.png">
+    <link rel="stylesheet" href="login.css">
+    <script defer src="login.js"></script>
+</head>
+
+<body class="container">
+
+        <!--navigator-->
+        <div class="navicontainer">
+            <a href="index.html">
+                <h2 class="store-title">PLAY DOG</h2>
+            </a>
+            <a href="search.html" class="navi" style="margin:10px;">검색</a>
+            <a href="login.html" class="navi" style="margin:10px;">LOG IN/SIGN IN</a>
+            <a href="order.html" class="navi" style="margin:10px;">ORDER</a>
+            <a href="product.html" class="navi" style="margin:10px;">PRODUCT</a>
+            <a href="index.html" class="navi" style="margin:10px;">HOME</a>
+        </div>
+
+    <!-- login 부분-->
+    <div class="section">
+        <div class="login-container">
+            <div class="login-form">
+                
+                    <!--회원 로그인-->
+                    <div class="group type1">
+                        <h3>회원 로그인</h3>
+                        <p class="tip">가입하신 아이디와 비밀번호를 입력하세요</p>
+                        <div class="login-input">
+                            <div style="margin-bottom: 15px;">
+                                <input type="text" name="id" id="loginId" placeholder="아이디" class="txtInput">
+                            </div>
+                            <div>
+                                <input type="text" name="pw" id="loginPw" style="-webkit-text-security: square;" placeholder="비밀번호" class="txtInput">    
+                            </div>
+                        </div>
+                        <p class="login-button">
+                            <button type="submit" class="btn" value="loginBtn">로그인</button>
+                        </p>
+
+                        <div class="login-help">
+                            <p class="saveId">
+                                <input type="checkbox" name="save-id" id="saveId" value="" class="check">
+                                <label for="saveId">아이디 저장</label>
+                            </p>
+                            <p class="signIn">
+                                <a href="register.html">회원가입</a>
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!--비회원 로그인-->
+                    <div class="group type2">
+                        
+                            <h3>비회원 로그인</h3>
+                            <p class="tip">주문번호와 주문 시 기입한 이메일을 입력하세요</p>
+                            <div class="login-input">
+                                <div style="margin-bottom: 15px;">
+                                    <input type="text" name="orderNo" id="loginId" placeholder="주문번호" class="txtInput">
+                                </div>
+                                <div>
+                                    <input type="text" name="orderEmail" id="loginPw" placeholder="이메일주소" class="txtInput">    
+                                </div>
+                                
+                            </div>
+                            <p class="login-button">
+                                <button type="submit" value="orderBtn" class="btn">주문조회</a>
+                            </p>
+                        
+                    </div>
+                
+            </div>
+
+        </div>
+
+    </div>
+    
+    <footer class="footer">
+        <p>사업자 정보</p>
+        <i class="">Play dog</i>
+        <p class="">연락처 : 02-1111-111<br>주소 : 서울시 어딘가</p>
+        <a class="" href="#" target="_blank">link</a>
+    </footer>
+
+</body>
+</html>

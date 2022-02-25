@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Shizuru&display=swap');
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    display: block;
+    font-family:Verdana,sans-serif;
+    font-size:15px;
+    line-height:1.5;
+}
+
+body {
+    font-family: 'Jua', sans-serif;
+    margin: 0;
+}
+
+.container {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.navicontainer {
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    display: table;
+    white-space: normal;
+    overflow:hidden;
+}
+
+.store-title {
+    float: left;
+    font-size: 30px;
+    margin: 10px 0;
+    padding: 0 8px;
+    width: 200px;
+    background-color: #795548!important;
+    color: #FFFF;
+    border-radius: 4px;
+    display: block;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.navi {
+    padding: 8px 16px;
+    float: right;
+    width: auto;
+    border: none;
+    font-size: 15px;
+    white-space: nowrap;
+    text-align: center;
+    outline: 0;
+    display: inline-block;
+    overflow: hidden;
+
+}
+
+.navi:hover, .buy-button:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+a {
+    color: inherit;
+    background-color: transparent;
+    text-decoration-line: none;
+}
+
+/*header*/
+.header-image {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.header-content {
+    position: absolute;
+    top: 60%;
+    right: 30%;
+    padding: 12px 24px;
+    transform: translate(30%, -50%);
+}
+
+@media(max-width: 600px) {
+    #header-des {display: none}
+}
+
+.buy-button {
+    color: #000;
+    background-color: #ffffcc;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    white-space: nowrap;
+    padding: 12px 24px;
+}
+
+
+/*container*/
+/*
+#menu-image {
+    float: right;
+}
+
+.main {
+    width: 1280px;
+    border: 2px solid #795548;
+    margin: 0 auto;
+    align-items: center;
+    display: table;
+}
+
+.best-container {
+    text-align: center;
+}
+
+.menu-container {
+    width: 20%;
+    float: left;
+    border: 2px solid darkblue;
+}
+
+.image-container {
+    width: 80%;
+
+    float: right;
+}
+*/
+
+
+/*main 화면 */
+.inner-cont{
+    padding-bottom: 40px;
+    width: 1140px;
+    margin: 0 auto;
+    /*position: relative;*/
+
+    display: flex;
+    /*align-items: flex-start;*/
+    align-items: stretch;
+}
+
+
+.pick h2 {
+    font-size: 32px;
+}
+
+.pick p {
+    padding-top: 60px;
+    font-size: 15px;
+}
+
+.pick ul {
+    padding-top: 80px;
+}
+
+.pick ul a {
+    display:inline-block;
+    height:24px;
+    margin-bottom:10px;
+    padding:0 10px;
+    font-size:15px;
+    line-height:24px;
+    font-weight:normal;
+    color:#000;
+    background-color:#eee;
+    border-radius:12px;
+}
+
+.pick ul a:hover {
+    background-color:#ddd;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.item-list {
+    justify-content: flex-start;
+}
+
+.item-list ul {
+    margin: 0;
+}
+
+.item-list li{
+    width: 260px;
+    height: 370px;
+    /*margin: 0 10px;*/
+    position:relative;
+    float:left;
+    margin-left: 20px;
+}
+
+
+.thumb-nail {
+    height: 260px;
+    width: 100%;
+    position: relative;
+}
+
+.thumb-nail img {
+    height: 260px;
+    width: 260px;
+}
+
+
+
+/*인기품목*/
+.best-food {
+    width: 400px;
+    height: 300px;
+    text-align: center;
+ 
+
+    cursor: pointer;
+    position: relative;
+}
+
+.best-food img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30%;
+
+    display: block;
+    transition: .5s ease; 
+    opacity: 1;
+}
+
+.text-box {
+    transition: .5s ease; 
+    opacity: 0;
+    position: absolute;
+    color: black;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ccc;
+    font-size: 1.5rem;
+}
+
+.best-food:hover .best-food img {
+    opacity: 0.5;
+}
+
+.best-food:hover .best-food.text-box {
+    opacity: 1;
+}
+
+
+
+.footer {
+    text-align: center;
+    background-color: #ffffcc;
+    padding: 50px;
+}

@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Shizuru&display=swap');
+
+* {box-sizing: border-box;}
+
+html {
+    display: block;
+    font-family:Verdana,sans-serif;
+    font-size:15px;
+    line-height:1.5;
+}
+
+body {
+    font-family: 'Jua', sans-serif;
+    margin: 0;
+}
+
+.container {
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+
+
+/*navigation과 타이틀*/
+.navicontainer {
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    display: table;
+    white-space: normal;
+    overflow:hidden;
+}
+
+
+.store-title {
+    float: left;
+    font-size: 30px;
+    margin: 10px 0;
+    padding: 0 8px;
+    width: 200px;
+    background-color: #795548!important;
+    color: #FFFF;
+    border-radius: 4px;
+    display: block;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.navi {
+    padding: 8px 16px;
+    float: right;
+    width: auto;
+    border: none;
+    font-size: 15px;
+    white-space: nowrap;
+    text-align: center;
+    outline: 0;
+    display: inline-block;
+    overflow: hidden;
+}
+
+
+.navi:hover, .buy-button:hover {
+    color: #000;
+    background-color: #ccc;
+}
+
+a {
+    color: inherit;
+    background-color: transparent;
+    text-decoration-line: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.main:nth-child(1){
+    text-align: center;
+    border-bottom: rgba( 255, 255, 255, 0.5 );
+}
+
+
+
+/*TAB 메뉴 */
+.tabmenu-container {
+    /*width: 500px;
+    position: relative;
+    width: 1160px;
+    margin: 0 auto;
+    border-top: 1px solid #ddd;*/
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-left: 0;
+    background-color: #fff;
+}
+
+.container .tab-container{
+    margin-top: 50px;
+    background-color: #fff;
+}
+
+
+ul.tabs{
+    /*padding: 0px;
+    list-style: none;*/
+    display: flex;
+    list-style: none;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+    height: 45px;
+    width: 1160px;
+    position: relative;
+    margin: 0 auto;
+    border-top: 1px solid #ddd;
+
+    align-items: center;
+    font-size: 20px;
+}
+
+ul.tabs li{
+    /*background: none;
+    color: #222;
+    display: inline-block;
+    padding: 10px 15px;*/
+
+    position: relative;
+    flex: auto;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+ul.tabs li:hover {
+    color: #000;
+    background-color: #ffffcc;
+}
+  
+ul.tabs li.current{
+    background: #ffffcc;
+    color: #222;
+}
+  
+.tab-content{
+    display: none;
+    align-items: stretch;
+    background: white;
+    padding: 15px;
+    padding-bottom: 50px;
+    margin: 0 auto;
+    width: 1140px;
+}
+  
+.tab-content.current{
+    display: flex;
+}
+
+.tab-content .tab-box {
+    width: 240px;
+    height: 445px;
+    position: relative;
+    /*display: grid;
+    flex-direction : row;*/
+}
+
+.tab-box .card-photo {
+    /*border: 2px solid crimson;*/
+    width: 240px;
+    height: 240px;
+}
+
+.slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* 이미지를 숨기는데 사용 */
+  .mySlides {
+      display: none;
+  }
+  
+  /* 다음, 이전 버튼 */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+  }
+  .mySlides img{
+      height: 60vh;
+  }
+  
+  /* "다음 버튼"을 오른쪽에 위치 */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+.card-photo img {
+    height: 240px;
+    width: 240px;
+}
+
+.tab-box .info {
+    text-align: center;
+}
+
+
+.tab-box .order-button {
+    color: #000;
+    background-color: #ffffcc;
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    white-space: nowrap;
+    padding: 10px 10px;
+}
+
+p.store {
+    color: #b2b2b2;
+    font-size: 15px;
+    line-height: 14px;
+    font-weight: bold;
+    text-decoration: underline;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+p.product {
+    color: #555;
+    font-size: 16px;
+    min-height: 32px;
+    vertical-align: top;
+    line-height: 18px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+
+/*footer*/
+.footer {
+    text-align: center;
+    background-color: #ffffcc;
+    padding: 50px;
+}
+.section{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
